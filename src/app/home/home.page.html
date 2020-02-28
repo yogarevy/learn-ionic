@@ -1,20 +1,47 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      YOGA REVY SETIADI
     </ion-title>
+
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      HI!
+    </ion-button>
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      ABOUT ME
+    </ion-button>
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      WORK EXPERIENCE
+    </ion-button>
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      PORTOFOLIO
+    </ion-button>
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      SKILLS
+    </ion-button>
+    <ion-button slot="end" (click)="onClick()" expand="block" fill="clear" shape="round">
+      CONTACT
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm>
+        <div id="welcome">
+          <ion-img src="../../assets/image/welcome.svg" style="width:90%;margin-left: 14px;"></ion-img>
+        </div>
+      </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-col size="12" size-sm>
+        <div id="nama">
+          <p>I am</p>
+          <strong id="my_name">YOGA REVY SETIADI</strong>
+          <br>
+          <span>FULLSTACK WEB DEVELOPER</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
