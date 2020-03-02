@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      YOGA REVY SETIADI
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="menu-button">
+      <ion-button *ngFor="let item of menus" [routerLink]="item.route" slot="end" fill="{{(aktip==item.id) ? 'solid' : 'clear'}}" expand="block" shape="round" color="dark" (click)="clickMenu(item)">
+        {{item.menu}}
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
