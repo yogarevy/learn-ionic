@@ -1,0 +1,41 @@
+<ion-content>
+    <ion-grid fixed>
+        <ion-row *ngIf="dataAbout">
+            <ion-col size="6">
+                <ion-grid fixed>
+                    <ion-row>
+                        <ion-col size="12">
+                            <h1>YOGA REVY SETIADI</h1>
+                            <p>Hi! I am a Bandung-based Web Developer who focuses on front-end and back-end web developing. Never satisfied studying and want to learn more and develop skills. Not an expert but want to be an expert.</p>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+            <ion-col size="6" size-sm>
+                <ion-avatar style="margin-left: 25%;">
+                    <ion-img src="../../assets/image/yoga.jpg" style="width:500%;height:500%;"></ion-img>
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+        <ion-row *ngIf="!dataAbout">
+            <ion-col size="6">
+                <ion-grid fixed>
+                    <ion-row>
+                        <ion-col size="12">
+                                <ion-skeleton-text animated style="width:50%;height: 40%;"></ion-skeleton-text>
+                                <br>
+                                <ion-skeleton-text animated style="height: 17%;"></ion-skeleton-text>
+                                <ion-skeleton-text animated style="height: 17%;"></ion-skeleton-text>
+                                <ion-skeleton-text animated style="width:75%;height: 17%;"></ion-skeleton-text>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+            <ion-col size="6" size-sm>
+                <ion-avatar style="margin-left: 25%;">
+                    <ion-skeleton-text animated style="width:500%;height:500%;margin-left: 14px;"></ion-skeleton-text>
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
