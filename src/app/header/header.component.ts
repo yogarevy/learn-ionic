@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
       this.aktip = 1;
     } else if(currentUrl==='/about') {
       this.aktip = 2;
-    } else if(currentUrl==='/work_exp') {
+    } else if(currentUrl==='/work-exp') {
       this.aktip = 3;
     } else if(currentUrl==='/portofolio') {
       this.aktip = 4;
@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
   menus = [
     {"id" : "1", "menu": "HI!", "route" : "/home"},
     {"id" : "2", "menu": "ABOUT ME", "route" : "/about"},
-    {"id" : "3", "menu": "WORK EXPERIENCE", "route" : "/work_exp"},
+    {"id" : "3", "menu": "WORK EXPERIENCE", "route" : "/work-exp"},
     {"id" : "4", "menu": "PORTOFOLIO", "route" : "/portofolio"},
     {"id" : "5", "menu": "SKILLS", "route" : "/skills"},
     {"id" : "6", "menu": "CONTACT", "route" : "/contact"}
