@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.page.scss'],
 })
 export class AboutPage implements OnInit {
-
+  dataAbout: any;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter() {
+    setTimeout(() => {
+      this.dataAbout = true;
+    }, 3000);
   }
 
 }
