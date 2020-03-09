@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
     let allUrl = window.location.href;
     let currentUrl = allUrl.replace('http://localhost:8100/','/')
 
-    if (currentUrl==='/home') {
+    if (currentUrl==='/home' || currentUrl === '/') {
       this.aktip = 1;
     } else if(currentUrl==='/about') {
       this.aktip = 2;
