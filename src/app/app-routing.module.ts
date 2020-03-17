@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'work-exp',
     loadChildren: () => import('./work-exp/work-exp.module').then( m => m.WorkExpPageModule)
   },
+  {
+    path: 'portofolio',
+    loadChildren: () => import('./portofolio/portofolio.module').then( m => m.PortofolioPageModule)
+  },
 ];
 
 @NgModule({

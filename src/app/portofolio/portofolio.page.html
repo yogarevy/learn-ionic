@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>portofolio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6" align="left">
+          <ion-slides [options]="slideOptsOne" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+            <ion-slide *ngFor="let o of sliderOne.slidesItems">
+                <img src="../../assets/images/{{o.image}}">
+            </ion-slide>
+          </ion-slides>
+      </ion-col>
+      <ion-col size="6">
+        <h2>BOGA APPS</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
+        </p>
+      </ion-col>
+    </ion-row>
+    <br><br>
+
+    <ion-row>
+      <ion-col size="6">
+        <h2>CMS NTS</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
+        </p>
+      </ion-col>
+      <ion-col size="6" align="right">
+          <ion-slides [options]="slideOptsTwo" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
+            <ion-slide *ngFor="let t of sliderTwo.slidesItems">
+                <img src="../../assets/images/{{t.image}}">
+            </ion-slide>
+          </ion-slides>
+      </ion-col>
+    </ion-row>
+    <br><br>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-slides [options]="slideOptsThree" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
+          <ion-slide *ngFor="let th of sliderThree.slidesItems">
+              <img src="../../assets/images/{{th.image}}">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+      <ion-col size="6">
+        <h2>eTLE</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <br><br>
+
+    <ion-row>
+      <ion-col size="6">
+        <h2>WEB RANKING LOKASI WISATA</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
+        </p>
+      </ion-col>
+      <ion-col size="6">
+        <ion-slides [options]="slideOptsFour" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
+          <ion-slide *ngFor="let f of sliderFour.slidesItems">
+              <img src="../../assets/images/{{f.image}}">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
