@@ -8,12 +8,14 @@ import { IonSlides } from '@ionic/angular';
 })
 export class PortofolioPage implements OnInit {
 
-  @ViewChild('slideWithNav') slideWithNav: IonSlides;
+  @ViewChild('slideWithNav', {static: false}) slideWithNav: IonSlides;
   
   sliderOne: any;
   sliderTwo: any;
   sliderThree: any;
   sliderFour: any;
+  sliderFive: any;
+  sliderSix: any;
 
   //Configuration for each Slider
   slideOptsOne = {
@@ -35,6 +37,18 @@ export class PortofolioPage implements OnInit {
   };
 
   slideOptsFour = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true
+  };
+
+  slideOptsFive = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true
+  };
+
+  slideOptsSix = {
     initialSlide: 0,
     slidesPerView: 1,
     autoplay:true
@@ -194,6 +208,70 @@ export class PortofolioPage implements OnInit {
           {
             id: 11,
             image: '../../assets/porto/ranking-wisata/11.png'
+          },
+          {
+            id: 12,
+            image: '../../assets/porto/ranking-wisata/12.png'
+          }
+        ]
+      };
+      //Item object for POS Indonesia
+      this.sliderFive =
+      {
+        isBeginningSlide: true,
+        isEndSlide: false,
+        slidesItems: [
+          {
+            id: 1,
+            image: '../../assets/porto/cukai-pos/1.png'
+          },
+          {
+            id: 2,
+            image: '../../assets/porto/cukai-pos/2.png'
+          },
+          {
+            id: 3,
+            image: '../../assets/porto/cukai-pos/3.png'
+          },
+          {
+            id: 4,
+            image: '../../assets/porto/cukai-pos/4.png'
+          },
+          {
+            id: 5,
+            image: '../../assets/porto/cukai-pos/5.png'
+          },
+          {
+            id: 6,
+            image: '../../assets/porto/cukai-pos/6.png'
+          },
+          {
+            id: 7,
+            image: '../../assets/porto/cukai-pos/7.png'
+          },
+          {
+            id: 8,
+            image: '../../assets/porto/cukai-pos/8.png'
+          }
+        ]
+      };
+      //Item object for SIAKAD
+      this.sliderSix =
+      {
+        isBeginningSlide: true,
+        isEndSlide: false,
+        slidesItems: [
+          {
+            id: 1,
+            image: '../../assets/porto/siakad/1.png'
+          },
+          {
+            id: 2,
+            image: '../../assets/porto/siakad/2.png'
+          },
+          {
+            id: 3,
+            image: '../../assets/porto/siakad/3.png'
           }
         ]
       };

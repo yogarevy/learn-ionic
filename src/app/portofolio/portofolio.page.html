@@ -16,9 +16,28 @@
       </ion-col>
       <ion-col size="6">
         <h2>BOGA APPS</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
-        </p>
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>:</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>:</td>
+              <td>AngularJs, Bootstrap, PHP slim framework, RedBeanPHP, MySQL</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>:</td>
+              <td>Frontend</td>
+            </tr>
+            <tr>
+              <td colspan="3">Web Application that help people to get queue ticket, displaying queue, and calling queue. Built using angularJS, Bootstrap as frontend side and PHP as backend.</td>
+            </tr>
+          </tbody>
+        </table>
       </ion-col>
     </ion-row>
     <br><br>
@@ -26,9 +45,28 @@
     <ion-row>
       <ion-col size="6">
         <h2>CMS NTS</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
-        </p>
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>:</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>:</td>
+              <td>AngularJs, Bootstrap, Guzzle Rest API</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>:</td>
+              <td>Frontend, Client Side</td>
+            </tr>
+            <tr>
+              <td colspan="3">Web Application that can manage content like videos and running text to displaying on digital signage.</td>
+            </tr>
+          </tbody>
+        </table>
       </ion-col>
       <ion-col size="6" align="right">
           <ion-slides [options]="slideOptsTwo" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
@@ -42,7 +80,7 @@
 
     <ion-row>
       <ion-col size="6">
-        <ion-slides [options]="slideOptsThree" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
+        <ion-slides [options]="slideOptsThree" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderThree,slideWithNav)">
           <ion-slide *ngFor="let th of sliderThree.slidesItems">
               <img src="../../assets/images/{{th.image}}">
           </ion-slide>
@@ -50,25 +88,133 @@
       </ion-col>
       <ion-col size="6">
         <h2>eTLE</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
-        </p>
+          <table id="table">
+            <tbody>
+              <tr>
+                <td>Year</td>
+                <td>:</td>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <td>Technology</td>
+                <td>:</td>
+                <td>AngularJs, Bootstrap, Java Spring Boot, MySQL</td>
+              </tr>
+              <tr>
+                <td>Role</td>
+                <td>:</td>
+                <td>Frontend, Client Side</td>
+              </tr>
+              <tr>
+                <td colspan="3">Electronic Traffic Law Enforcement is a Web Application that can menage and confirm traffic violation.</td>
+              </tr>
+            </tbody>
+          </table>
       </ion-col>
     </ion-row>
-
     <br><br>
 
     <ion-row>
       <ion-col size="6">
         <h2>WEB RANKING LOKASI WISATA</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque repellendus suscipit! Eum, quisquam iusto? Adipisci error numquam est sint, distinctio, molestias accusamus veniam aperiam sit itaque asperiores, voluptate dicta.
-        </p>
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>:</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>:</td>
+              <td>Bootstrap, PHP, MySQL</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>:</td>
+              <td>Fullstack</td>
+            </tr>
+            <tr>
+              <td colspan="3">Web project for bachelor degree, users can give votes for tourist destination which can increase ranking for recomendation tour location.</td>
+            </tr>
+          </tbody>
+        </table>
       </ion-col>
       <ion-col size="6">
-        <ion-slides [options]="slideOptsFour" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav)">
+        <ion-slides [options]="slideOptsFour" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderFour,slideWithNav)">
           <ion-slide *ngFor="let f of sliderFour.slidesItems">
               <img src="../../assets/images/{{f.image}}">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-slides [options]="slideOptsFive" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderFive,slideWithNav)">
+          <ion-slide *ngFor="let fv of sliderFive.slidesItems">
+              <img src="../../assets/images/{{fv.image}}">
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+      <ion-col size="6">
+        <h2>Web Konfirmasi Beacukai POS Indonesia</h2>
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>:</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>:</td>
+              <td>Bootstrap, PHP, MySQL</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>:</td>
+              <td>Fullstack</td>
+            </tr>
+            <tr>
+              <td colspan="3">Web application for manage customs and confirmtaion by email to customs recipient.</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+    </ion-row>
+    <br><br>
+
+    <ion-row>
+      <ion-col size="6">
+        <h2>Sistem Informasi Akademik</h2>
+        <table id="table">
+          <tbody>
+            <tr>
+              <td>Year</td>
+              <td>:</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <td>Technology</td>
+              <td>:</td>
+              <td>Bootstrap, PHP, MySQL</td>
+            </tr>
+            <tr>
+              <td>Role</td>
+              <td>:</td>
+              <td>Fullstack</td>
+            </tr>
+            <tr>
+              <td colspan="3">Web application that can manage students and teachers data. This web can be as a web portal to give information to student about study activities and give information report card grades.</td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+      <ion-col size="6">
+        <ion-slides [options]="slideOptsSix" #slideWithNav  (ionSlideDidChange)="SlideDidChange(sliderSix,slideWithNav)">
+          <ion-slide *ngFor="let s of sliderSix.slidesItems">
+              <img src="../../assets/images/{{s.image}}">
           </ion-slide>
         </ion-slides>
       </ion-col>
